@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mixed Messages - Fortune Cookie</title>
+    <style>
+        p {
+            text-align:center
+        }
+        h1 {
+            text-align: center
+        }
+    </style>
+    <script>
+        var a = document.getElementById("cookieImage"); //reference to the link on page "cookieImage"
+        a.onclick = writeFortune(); //code to run when link is clicked
+
+        document.getElementById("fortune").innerHTML = a.onclick; // assign results of writeFortune to display on HTML
+    </script>
 </head>
 <body>
     <h1>Welcome! Open the cookie to recieve your fortune!</h1>
-    <img src="https://www.horoscope.com/images-US/games/game-fortune-cookie-1.png" alt="Click here to open fortune cookie" width="128" height="128">
+    <a id="cookieImage"><center><img src="https://www.horoscope.com/images-US/games/game-fortune-cookie-1.png" alt="Click here to open fortune cookie" width="400" height="400"></center></a>
+    <p id="fortune"></p>
 </body>
 </html>
