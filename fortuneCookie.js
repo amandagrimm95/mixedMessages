@@ -8,3 +8,5 @@ const determineFortune = () => {
     let thingNum = Math.floor(Math.random * thing.legnth);
     return [time[timeNum], person[personNum], thing[thingNum]];
 }
+
+export {determineFortune};

@@ -1,3 +1,4 @@
+import {determineFortune} from 'frotuneCookie.js';
 let fortune = document.getElementById("fortune");
 const button = document.getElementById("cookieButton"); 
 
