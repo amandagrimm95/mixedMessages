@@ -13,16 +13,15 @@
             text-align: center
         }
     </style>
-    <script>
-        var a = document.getElementById("cookieImage"); //reference to the link on page "cookieImage"
-        a.onclick = writeFortune(); //code to run when link is clicked
-
-        document.getElementById("fortune").innerHTML = a.onclick; // assign results of writeFortune to display on HTML
-    </script>
 </head>
 <body>
     <h1>Welcome! Open the cookie to recieve your fortune!</h1>
-    <a id="cookieImage"><center><img src="https://www.horoscope.com/images-US/games/game-fortune-cookie-1.png" alt="Click here to open fortune cookie" width="400" height="400"></center></a>
+
+    <center><a id = "button"><img src="https://www.horoscope.com/images-US/games/game-fortune-cookie-1.png" alt="Click here to open fortune cookie" width="400" height="400"></a></center>
+
     <p id="fortune"></p>
+
+    <script src = "openCookie.js"></script>
+
 </body>
 </html>
