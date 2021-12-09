@@ -1,10 +1,9 @@
 let fortune = document.getElementById("fortune");
-const cookieButton = document.getElementById("cookieButton") 
+const button = document.getElementById("cookieButton"); 
 
 function writeFortune() {
     let fortune = determineFortune();
-    fortune.innerHTML = `Sometime ${fortune[0]}, ${fortune[1]} will ${fortune[2]}...`;
-    alert (`Sometime ${fortune[0]}, ${fortune[1]} will ${fortune[2]}...`);
+    fortune.textContent = `Sometime ${fortune[0]}, ${fortune[1]} will ${fortune[2]}...`;
 }
 
-cookieButton.onclick = writeFortune();
+button.onclick = writeFortune();
